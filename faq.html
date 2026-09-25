@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — RC5 Elite Motion</title>
+<meta name="description" content="Frequently asked questions about RC5 Elite Motion — booking, payments, cancellations, clinic timings, and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.page-hero{background:linear-gradient(135deg,var(--dark-blue) 0%,#1B3B78 100%);padding:72px 0;text-align:center;color:#fff;}
+.page-hero h1{font-size:clamp(28px,4vw,44px);font-weight:800;margin-bottom:14px;}
+.page-hero p{font-size:16px;color:#B9C6E6;max-width:560px;margin:0 auto;}
+.page-hero .hl{color:var(--orange);}
+.faq-wrap{max-width:760px;margin:0 auto;}
+.faq-item{background:#fff;border-radius:var(--radius-card);box-shadow:var(--shadow-card);margin-bottom:12px;overflow:hidden;border:1.5px solid var(--border);transition:border-color .2s;}
+.faq-item.open{border-color:var(--primary-blue);}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;cursor:pointer;gap:16px;}
+.faq-q-text{font-size:clamp(15px, 1.8vw, 20px);font-weight:600;color:var(--primary-blue);line-height:1.5;}
+.faq-icon{width:28px;height:28px;border-radius:8px;background:var(--light-blue);display:flex;align-items:center;justify-content:center;color:var(--primary-blue);font-size:16px;font-weight:700;flex-shrink:0;transition:background .2s,transform .2s;}
+.faq-item.open .faq-icon{background:var(--primary-blue);color:#fff;transform:rotate(45deg);}
+.faq-a{display:none;padding:0 24px 20px;font-size:clamp(15px, 1.5vw, 18px);color:var(--primary-blue);line-height:1.8;border-top:1px solid var(--border);}
+.faq-item.open .faq-a{display:block;}
+.faq-a-inner{padding-top:16px;}
+.faq-cta{text-align:center;margin-top:48px;}
+.faq-cta p{font-size:14px;color:var(--gray);margin-bottom:20px;}
+</style>
+</head>
+<body>
+<div class="main-wrap">
+
+<header>
+  <div class="content header-row">
+    <a href="index.html" class="logo">
+      <img src="assets/images/rc5-logo.jpeg" alt="RC5 Elite Motion">
+    </a>
+    <div class="header-actions">
+      <a href="index.html" class="btn btn-white">← BACK HOME</a>
+      <a href="index.html" onclick="history.back();setTimeout(()=>openBooking&&openBooking(),400);return false;" class="btn btn-orange">BOOK YOUR SEAT →</a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="page-hero">
+  <div class="content">
+    <div class="badge" style="margin-bottom:20px;display:inline-flex;">❓ Got Questions?</div>
+    <h1>Frequently Asked <span class="hl">Questions</span></h1>
+    <p>Everything you need to know about booking, payments, and your RC5 Elite Motion experience.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="content">
+    <div class="faq-wrap">
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">How do I book an appointment?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Click the "Book Your Seat" button on our website. Fill in your name, mobile number, age, gender, focus area, preferred date, and time slot. Once submitted, your seat will be reserved and you'll be prompted to complete the payment to confirm your booking.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">How do I make payment?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">After reserving your seat, you'll be directed to our secure Razorpay payment gateway. We accept UPI, credit/debit cards, net banking, and popular wallets. The workshop fee is ₹249 (discounted from ₹1500). Payment is required to confirm your booking.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Can I cancel my appointment?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Cancellations can be requested by contacting us via WhatsApp or phone at least 24 hours before your scheduled appointment. Cancellations made less than 24 hours before the session may not be eligible for a refund. Please refer to our Terms &amp; Conditions for the full cancellation policy.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Can I reschedule my appointment?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Yes, rescheduling is allowed subject to slot availability. Please contact us via WhatsApp at least 24 hours before your appointment to request a reschedule. We'll do our best to accommodate your preferred new date and time.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">What are the clinic timings?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">We are open Monday to Saturday. Morning sessions run from 7:00 AM to 1:00 PM, followed by a lunch break from 1:00 PM to 2:00 PM, and evening sessions from 2:00 PM to 9:00 PM. We are closed on Sundays.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Where is the clinic located?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">RC5 Elite Motion is located at 123, Wellness Avenue, Sector 14, Mumbai, Maharashtra — 400001. You can find us on Google Maps by searching "RC5 Elite Motion". For directions, feel free to WhatsApp us and we'll guide you.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">How do I contact the clinic?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">You can reach us by phone at +91 98765 43210, via WhatsApp on the same number, or by email at hello@rc5elitemotion.com. You can also use the contact form on our Contact Us page. We typically respond within a few hours during clinic hours.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Do I receive a WhatsApp confirmation?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Yes! Once your payment is confirmed, our team will send you a WhatsApp message with your booking details, session information, and any preparation instructions. Please ensure your mobile number is correct when booking.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Can I pay using UPI?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Absolutely! We accept all major UPI apps including Google Pay, PhonePe, Paytm, BHIM, and any UPI-enabled banking app. Simply select UPI on the Razorpay payment screen and complete the payment using your preferred app.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">What should I bring for my appointment?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Please wear comfortable, stretchable clothing that allows free movement. Bring your booking confirmation (Booking ID), a water bottle, and any previous medical reports or prescriptions if relevant to your condition. Arrive 5–10 minutes early to complete a brief intake form.</div></div>
+      </div>
+
+      <div class="faq-cta">
+        <p>Still have questions? We're happy to help!</p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-white" style="width:auto;padding:0 28px;">CONTACT US →</a>
+          <a href="index.html" onclick="history.back();setTimeout(()=>openBooking&&openBooking(),400);return false;" class="btn btn-orange" style="width:auto;padding:0 28px;">BOOK YOUR SEAT →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="content footer-row">
+    <a href="index.html" class="logo">
+      <img src="assets/images/rc5-logo.jpeg" alt="RC5 Elite Motion">
+    </a>
+    <div class="footer-nav">
+      <a href="learnings.html">Learnings</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+    <div class="footer-right">
+      <span>© 2026 RC5 Elite Motion. All Rights Reserved.</span>
+      
+    </div>
+  </div>
+</footer>
+
+</div>
+<script>
+function toggleFaq(el) {
+  const item = el.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+</script>
+</body>
+</html>
+

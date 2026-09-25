@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learnings — RC5 Elite Motion</title>
+<meta name="description" content="Explore health articles, exercise guides, posture tips, and recovery resources from RC5 Elite Motion experts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.page-hero{background:linear-gradient(135deg,var(--dark-blue) 0%,#1B3B78 100%);padding:72px 0;text-align:center;color:#fff;}
+.page-hero h1{font-size:clamp(28px,4vw,44px);font-weight:800;margin-bottom:14px;}
+.page-hero p{font-size:16px;color:#B9C6E6;max-width:560px;margin:0 auto;}
+.page-hero .hl{color:var(--orange);}
+.learn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+@media(max-width:900px){.learn-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.learn-grid{grid-template-columns:1fr;}}
+.learn-card{background:#fff;border-radius:var(--radius-card);box-shadow:var(--shadow-card);padding:24px;border-top:4px solid var(--primary-blue);}
+.learn-card.orange{border-top-color:var(--orange);}
+.learn-card h3{font-size:15px;font-weight:700;margin-bottom:10px;color:var(--dark-blue);}
+.learn-card ul{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.learn-card ul li{font-size:13px;color:var(--gray);display:flex;gap:8px;align-items:flex-start;line-height:1.5;}
+.learn-card ul li::before{content:"→";color:var(--primary-blue);font-weight:700;flex-shrink:0;}
+.learn-card.orange ul li::before{color:var(--orange);}
+.cat-icon{width:44px;height:44px;border-radius:12px;background:var(--light-blue);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px;}
+.cat-icon.orange-bg{background:#FFF6F1;}
+.video-section{background:var(--light-blue);}
+.vid-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+@media(max-width:900px){.vid-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.vid-grid{grid-template-columns:1fr;}}
+.vid-thumb{background:linear-gradient(160deg,#1B3B78,var(--dark-blue));border-radius:var(--radius-card);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative;overflow:hidden;}
+.vid-thumb .play-btn{width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;color:var(--primary-blue);font-size:18px;}
+.vid-thumb .vid-label{position:absolute;bottom:12px;left:12px;right:12px;color:#fff;font-size:12px;font-weight:600;}
+.articles-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+@media(max-width:700px){.articles-grid{grid-template-columns:1fr;}}
+.article-card{background:#fff;border-radius:var(--radius-card);box-shadow:var(--shadow-card);padding:20px 24px;display:flex;gap:16px;align-items:flex-start;}
+.article-num{width:36px;height:36px;border-radius:10px;background:var(--primary-blue);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;flex-shrink:0;}
+.article-card h4{font-size:14px;font-weight:700;margin-bottom:4px;color:var(--dark-blue);}
+.article-card p{font-size:12px;color:var(--gray);line-height:1.5;}
+.cta-center{text-align:center;padding:56px 0 0;}
+.cta-center p{color:var(--gray);font-size:14px;margin-bottom:20px;}
+</style>
+</head>
+<body>
+<div class="main-wrap">
+
+<header>
+  <div class="content header-row">
+    <a href="index.html" class="logo">
+      <img src="assets/images/rc5-logo.jpeg" alt="RC5 Elite Motion">
+    </a>
+    <div class="header-actions">
+      <a href="index.html" class="btn btn-white">← BACK HOME</a>
+      <a href="index.html#book" class="btn btn-orange" onclick="history.back();setTimeout(()=>openBooking&&openBooking(),400);return false;">BOOK YOUR SEAT →</a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="page-hero">
+  <div class="content">
+    <div class="badge" style="margin-bottom:20px;display:inline-flex;">📚 Expert Health Resources</div>
+    <h1>Your <span class="hl">Wellness Learning</span> Hub</h1>
+    <p>Evidence-based articles, exercise guides, and recovery tips curated by the RC5 Elite Motion team.</p>
+  </div>
+</section>
+
+<!-- Health Articles -->
+<section class="section">
+  <div class="content">
+    <h2 class="section-title">Health <span class="hl" style="color:var(--primary-blue);">Articles</span></h2>
+    <div class="learn-grid">
+      <div class="learn-card">
+        <div class="cat-icon">🦴</div>
+        <h3>Neck Pain Tips</h3>
+        <ul>
+          <li>Keep your screen at eye level to reduce neck strain</li>
+          <li>Take a 5-minute break every 45 minutes of desk work</li>
+          <li>Gentle chin tucks relieve cervical tension instantly</li>
+          <li>Avoid sleeping on your stomach — it twists the neck</li>
+          <li>Strengthen deep neck flexors for long-term relief</li>
+        </ul>
+      </div>
+      <div class="learn-card orange">
+        <div class="cat-icon orange-bg">🔙</div>
+        <h3>Back Pain Tips</h3>
+        <ul>
+          <li>Maintain a neutral spine while sitting and standing</li>
+          <li>Core strengthening is the #1 back pain prevention tool</li>
+          <li>Avoid prolonged sitting — stand and walk every hour</li>
+          <li>Use a lumbar support cushion for long drives</li>
+          <li>Hip flexor stretches reduce lower back load significantly</li>
+        </ul>
+      </div>
+      <div class="learn-card">
+        <div class="cat-icon">🦵</div>
+        <h3>Knee Pain Tips</h3>
+        <ul>
+          <li>Strengthen quads and glutes to protect the knee joint</li>
+          <li>Avoid locking your knees when standing for long periods</li>
+          <li>Proper footwear absorbs shock and reduces knee stress</li>
+          <li>Ice for 15 min after activity if swelling occurs</li>
+          <li>Step-ups and wall sits build knee stability safely</li>
+        </ul>
+      </div>
+      <div class="learn-card orange">
+        <div class="cat-icon orange-bg">💪</div>
+        <h3>Shoulder Pain Tips</h3>
+        <ul>
+          <li>Rotator cuff exercises prevent most shoulder injuries</li>
+          <li>Avoid overhead lifting with a rounded upper back</li>
+          <li>Doorway stretches open tight chest muscles daily</li>
+          <li>Sleep on your back or unaffected side for recovery</li>
+          <li>Scapular retraction exercises improve shoulder stability</li>
+        </ul>
+      </div>
+      <div class="learn-card">
+        <div class="cat-icon">🔄</div>
+        <h3>Recovery Tips</h3>
+        <ul>
+          <li>Sleep 7–9 hours — most tissue repair happens at night</li>
+          <li>Hydration accelerates muscle recovery by 30%</li>
+          <li>Foam rolling reduces DOMS and improves circulation</li>
+          <li>Active recovery (light walk) beats complete rest</li>
+          <li>Protein within 30 min post-exercise speeds healing</li>
+        </ul>
+      </div>
+      <div class="learn-card orange">
+        <div class="cat-icon orange-bg">🌿</div>
+        <h3>Lifestyle Tips</h3>
+        <ul>
+          <li>Morning sunlight regulates your circadian rhythm</li>
+          <li>Stress management reduces chronic muscle tension</li>
+          <li>Anti-inflammatory diet supports joint health</li>
+          <li>Mindful breathing activates the parasympathetic system</li>
+          <li>Consistent movement beats intense sporadic workouts</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Exercise Guides & Posture Tips -->
+<section class="section alt">
+  <div class="content">
+    <h2 class="section-title">Exercise Guides & <span class="hl" style="color:var(--primary-blue);">Posture Tips</span></h2>
+    <div class="learn-grid">
+      <div class="learn-card">
+        <div class="cat-icon">🧘</div>
+        <h3>Posture Correction Guide</h3>
+        <ul>
+          <li>Ears, shoulders, hips, and ankles should align vertically</li>
+          <li>Strengthen your posterior chain to fight forward head posture</li>
+          <li>Wall angels daily reset rounded shoulder posture</li>
+          <li>Ergonomic desk setup prevents 80% of posture issues</li>
+          <li>Thoracic mobility drills open up the mid-back</li>
+        </ul>
+      </div>
+      <div class="learn-card orange">
+        <div class="cat-icon orange-bg">🏋️</div>
+        <h3>Beginner Exercise Guide</h3>
+        <ul>
+          <li>Start with bodyweight — master form before adding load</li>
+          <li>3 sessions per week is optimal for beginners</li>
+          <li>Always warm up for 5–10 minutes before training</li>
+          <li>Focus on compound movements: squat, hinge, push, pull</li>
+          <li>Progress gradually — 5–10% increase per week max</li>
+        </ul>
+      </div>
+      <div class="learn-card">
+        <div class="cat-icon">🤸</div>
+        <h3>Mobility & Flexibility</h3>
+        <ul>
+          <li>Dynamic stretching before workouts, static after</li>
+          <li>Hip 90/90 stretch is the most effective hip opener</li>
+          <li>Ankle mobility directly affects squat depth and knee health</li>
+          <li>Thoracic rotation improves shoulder and neck function</li>
+          <li>10 minutes of daily mobility work prevents most injuries</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Exercise Videos -->
+<section class="section video-section">
+  <div class="content">
+    <h2 class="section-title">Exercise <span class="hl" style="color:var(--primary-blue);">Video Guides</span></h2>
+    <div class="vid-grid">
+      <div class="vid-thumb">
+        <div class="play-btn">▶</div>
+        <div class="vid-label">Neck & Shoulder Mobility Routine</div>
+      </div>
+      <div class="vid-thumb">
+        <div class="play-btn">▶</div>
+        <div class="vid-label">Lower Back Strengthening Exercises</div>
+      </div>
+      <div class="vid-thumb">
+        <div class="play-btn">▶</div>
+        <div class="vid-label">Knee Rehabilitation Protocol</div>
+      </div>
+      <div class="vid-thumb">
+        <div class="play-btn">▶</div>
+        <div class="vid-label">Full Body Posture Reset — 10 Min</div>
+      </div>
+      <div class="vid-thumb">
+        <div class="play-btn">▶</div>
+        <div class="vid-label">Hip Mobility & Flexibility Flow</div>
+      </div>
+      <div class="vid-thumb">
+        <div class="play-btn">▶</div>
+        <div class="vid-label">Morning Movement Routine — 7 Min</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Frequently Read Articles -->
+<section class="section">
+  <div class="content">
+    <h2 class="section-title">Frequently Read <span class="hl" style="color:var(--primary-blue);">Articles</span></h2>
+    <div class="articles-grid">
+      <div class="article-card"><div class="article-num">1</div><div><h4>Why Your Posture Is Causing Your Headaches</h4><p>Forward head posture adds up to 27 lbs of extra load on your cervical spine. Learn how to fix it.</p></div></div>
+      <div class="article-card"><div class="article-num">2</div><div><h4>The 5-Minute Morning Routine That Prevents Back Pain</h4><p>A simple sequence of movements that activates your core and prepares your spine for the day.</p></div></div>
+      <div class="article-card"><div class="article-num">3</div><div><h4>Sitting Is the New Smoking — Here's What to Do</h4><p>How prolonged sitting damages your hip flexors, glutes, and lower back — and how to reverse it.</p></div></div>
+      <div class="article-card"><div class="article-num">4</div><div><h4>Knee Pain While Climbing Stairs? Read This</h4><p>Patellofemoral syndrome explained — causes, exercises, and when to seek professional help.</p></div></div>
+      <div class="article-card"><div class="article-num">5</div><div><h4>How Sleep Position Affects Your Neck and Back</h4><p>The best and worst sleeping positions for spinal health, with pillow recommendations.</p></div></div>
+      <div class="article-card"><div class="article-num">6</div><div><h4>Breathing Techniques That Reduce Muscle Tension</h4><p>Diaphragmatic breathing activates your parasympathetic system and releases chronic tension patterns.</p></div></div>
+    </div>
+
+    <div class="cta-center">
+      <p>Ready to experience personalised guidance from our expert coaches?</p>
+      <a href="index.html" onclick="history.back();setTimeout(()=>openBooking&&openBooking(),400);return false;" class="btn btn-orange" style="display:inline-flex;">BOOK YOUR SEAT NOW →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="content footer-row">
+    <a href="index.html" class="logo">
+      <img src="assets/images/rc5-logo.jpeg" alt="RC5 Elite Motion">
+    </a>
+    <div class="footer-nav">
+      <a href="learnings.html">Learnings</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+    <div class="footer-right">
+      <span>© 2026 RC5 Elite Motion. All Rights Reserved.</span>
+     
+    </div>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
+

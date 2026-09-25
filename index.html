@@ -1,0 +1,1272 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RC5 Elite Motion — Premium Movement &amp; Wellness Workshop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+
+  <div class="main-wrap">
+
+    <header>
+      <div class="content header-row">
+        <div class="logo">
+          <img src="assets/images/rc5-logo.jpeg" alt="RC5 Elite Motion">
+        </div>
+        <div class="header-actions">
+          <div class="header-action-row">
+            <button class="btn btn-white" onclick="openPayNow()">PAY NOW →</button>
+            <div class="header-book-wrap">
+              <button class="book-now-btn" onclick="openBooking()">Book Your Session <span
+                  class="book-arrow">→</span></button>
+            </div>
+          </div>
+          <div class="header-guarantee-wrap">
+            <div class="book-guarantee text-boost"><span class="hl">₹99</span> Only</div>
+            <div class="book-guarantee text-boost"><span class="book-check">✔</span> <span class="hl">100%</span> Money Back Guarantee</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="content">
+
+        <!-- Urgency bar -->
+        <div class="hero-urgency-bar text-boost">
+          <span class="hero-urgency-bar-line">🔥 82% Seats Already Booked —</span>
+          <span class="hero-urgency-bar-line">Limited Seats Remaining!</span>
+        </div>
+
+        <!-- Copy: centered above columns -->
+        <p class="hero-for text-boost">Especially for Busy Professionals, Business Owners &amp; Working Adults</p>
+        <h1 class="hero-h1">Relieve <strong class="emphasis">Back, Neck, Shoulder &amp; Ankle Pain</strong><br>Naturally
+          &amp; <span class="hl">Permanently</span></h1>
+        <p class="hero-sub">Without Any Painkillers, Surgery or Endless Physiotherapy Visits</p>
+
+        <!-- Two columns -->
+        <div class="hero-cols">
+
+          <!-- LEFT: Video -->
+          <div class="hero-video-col">
+            <div class="hero-poster" onclick="openVideoModal()">
+              <img src="assets/images/thum.jpeg" class="hero-slide active" alt="RC5 Workshop Thumbnail">
+              <div class="hero-play-btn">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                  <polygon points="5,3 19,12 5,21" />
+                </svg>
+              </div>
+              <div class="hero-poster-badge">▶ Watch the 3-Minute Workshop Preview</div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Info + CTA -->
+          <div class="hero-info-col">
+            <div class="workshop-info-card">
+              <div class="wi-box"><span class="wi-icon">📅</span>
+                <div>
+                  <div class="wi-label text-boost">Workshop Date</div>
+                  <div class="wi-val text-boost" id="heroWorkshopDate">Loading...</div>
+                </div>
+              </div>
+              <div class="wi-box"><span class="wi-icon">🕒</span>
+                <div>
+                  <div class="wi-label text-boost">Workshop Time</div>
+                  <div class="wi-val text-boost">7:00 PM – 9:00 PM</div>
+                </div>
+              </div>
+              <div class="wi-box"><span class="wi-icon">💻</span>
+                <div>
+                  <div class="wi-label text-boost">Live Workshop</div>
+                  <div class="wi-val text-boost"><strong class="emphasis">2-Day</strong> Live Online Workshop</div>
+                </div>
+              </div>
+              <div class="wi-box"><span class="wi-icon">🌐</span>
+                <div>
+                  <div class="wi-label text-boost">Language</div>
+                  <div class="wi-val text-boost">Gujarati + Hindi</div>
+                </div>
+              </div>
+            </div>
+            <button class="book-now-btn" style="margin-top:20px;" onclick="openBooking()">Book Your Session <span
+                class="book-arrow">→</span></button>
+            <div class="book-guarantee text-boost"><span class="hl">₹99</span> Only</div>
+            <div class="book-guarantee text-boost"><span class="book-check">✔</span> <span class="hl">100%</span> Money Back Guarantee</div>
+            <div class="hero-urgency text-boost">
+              <span class="hero-urgency-line">🔥 Only&nbsp;<strong>23</strong>&nbsp;Seats Left —</span>
+              <span class="hero-urgency-line">Registration Closes Once Full!</span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Choose Your Service -->
+    <section class="section alt">
+      <div class="content">
+        <p class="section-eyebrow">Whether you want to learn the RC5 Method or need one-to-one expert guidance, select
+          the option that best fits your needs.</p>
+        <h2 class="section-title">Choose Your <span class="hl">Service</span></h2>
+        <div class="service-cards">
+
+          <div class="service-card service-card--gold">
+            <div class="service-icon">🎓</div>
+            <div class="service-tag">LIVE RC5 Workshop</div>
+            <div class="service-title">Learn the RC5 Method</div>
+            <ul class="service-list">
+              <li>✔ Live Training</li>
+              <li>✔ Pain Assessment</li>
+              <li>✔ Q&amp;A Session</li>
+            </ul>
+            <button class="book-now-btn" onclick="openBooking()">Book Your Session <span
+                class="book-arrow">→</span></button>
+            <div class="book-guarantee text-boost"><span class="hl">₹99</span> Only</div>
+            <div class="book-guarantee text-boost"><span class="book-check">✔</span> <span class="hl">100%</span> Money Back Guarantee</div>
+          </div>
+
+          <div class="service-card service-card--gold">
+            <div class="service-icon">👨‍⚕️</div>
+            <div class="service-tag">1-to-1 Consultation</div>
+            <div class="service-title"><strong class="emphasis">Personalized Recovery</strong></div>
+            <ul class="service-list">
+              <li>✔ <strong class="emphasis">Root Cause Analysis</strong></li>
+              <li>✔ Recovery Plan</li>
+              <li>✔ Expert Guidance</li>
+            </ul>
+            <button class="book-now-btn" onclick="openConsultation()">Book Your Consultation <span
+                class="book-arrow">→</span></button>
+            <div class="book-guarantee text-boost"><span class="hl">₹249</span> Only</div>
+            <div class="book-guarantee text-boost"><span class="book-check">✔</span> <span class="hl">100%</span> Money Back
+              Guarantee</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Results / Statistics -->
+    <section class="section">
+      <div class="content">
+        <h2 class="section-title">Real Results That <span class="hl">Speak For Themselves</span></h2>
+        <div class="stats-grid">
+
+          <div class="stat-card">
+            <div class="stat-num">10,000+</div>
+            <div class="stat-desc">People Relieved From<br><strong>Back Pain — Knee Pain — Shoulder Pain — Ankle
+                Pain</strong><br>Naturally</div>
+            <img src="assets/images/imag1.png" alt="10,000+ People Relieved"
+              style="width:100%;border-radius:10px;margin-top:14px;object-fit:cover;">
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-num">5,000+</div>
+            <div class="stat-desc">People Learned<br><strong>Non Surgical Pain Management Strategies</strong></div>
+            <img src="assets/images/imag2.png" alt="5,000+ People Learned"
+              style="width:100%;border-radius:10px;margin-top:14px;object-fit:cover;">
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-num">₹10 Crore+</div>
+            <div class="stat-desc"><strong>Medical Expenses Saved</strong><br>Over The Last 10 Years</div>
+            <img src="assets/images/imag3.png" alt="₹10 Crore+ Saved"
+              style="width:100%;border-radius:10px;margin-top:14px;object-fit:cover;">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: Meet Your Instructors -->
+    <section class="section s8-instructors">
+      <div class="content">
+        <p class="section-eyebrow">Your Guides to Pain-Free Living</p>
+        <h2 class="section-title" style="color:var(--navy);">Meet Your <span class="hl">Instructors</span></h2>
+        <div class="s8-instructor-names">Dr. Devang Kacha &amp; Dr. Priya</div>
+        <div class="s8-experience-badge">🏅 10+ Years of Experience in Pain Management, Physiotherapy &amp; Movement
+          Rehabilitation</div>
+        <div class="s8-instructor-grid">
+          <div class="s8-instructor-card">
+            <div class="s8-photo-wrap">
+              <img src="assets/images/intro1.jpeg" alt="Dr. Devang Kacha">
+            </div>
+            <div class="s8-instructor-info">
+              <div class="s8-instructor-name">Dr. Devang Kacha</div>
+              <div class="s8-instructor-role">Pain Management &amp; Movement Rehabilitation Expert</div>
+            </div>
+          </div>
+          <div class="s8-instructor-card">
+            <div class="s8-photo-wrap">
+              <img src="assets/images/intro2.jpeg" alt="Dr. Priya">
+            </div>
+            <div class="s8-instructor-info">
+              <div class="s8-instructor-name">Dr. Priya</div>
+              <div class="s8-instructor-role"> Structural Recovery Specialist</div>
+            </div>
+          </div>
+        </div>
+        <p class="s8-instructor-desc">Dr. Devang Kacha and Dr. Priya have helped over 10,000+ individuals improve their
+          mobility and manage back, neck, knee, and other musculoskeletal pain through evidence-based assessment,
+          movement rehabilitation, and personalized recovery strategies.<br><br>In this LIVE workshop, they will guide
+          you through the RC5 Recovery System, explain the underlying causes of common pain conditions, and share
+          practical techniques that can support long-term pain management and improved movement.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Testimonials -->
+    <section class="section alt">
+      <div class="content">
+        <div class="testimonial-head">
+          <h2>They came, they believed,<br><span class="hl">they transformed their performance</span></h2>
+          <div class="sub">Hear it from the RC5 Elite Motion Family</div>
+        </div>
+        <div class="testimonial-marquee" aria-label="Customer testimonials">
+          <div class="testimonial-track">
+            <div class="testimonial-card">
+              <div class="video-card" onclick="openTestimonialVideo(this)" role="button" tabindex="0"
+                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault(); openTestimonialVideo(this);}">
+                <video src="assets/videos/second.mp4" data-video="assets/videos/second.mp4" playsinline
+                  preload="metadata" disablepictureinpicture
+                  controlsList="nofullscreen nodownload noremoteplayback"></video>
+                <div class="play" aria-hidden="true">▶</div>
+              </div>
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="review-avatar">N</div>
+                  <div>
+                    <div class="review-name">Neha Sharma</div>
+                    <div class="review-stars">★★★★★</div>
+                  </div>
+                </div>
+                <p class="review-text">"Before joining RC5, I felt stiff and low on energy every single day. This
+                  workshop completely changed how I move and feel. I'm so much more mobile, confident, and doing the
+                  sessions daily. Truly life-changing!"</p>
+                <div class="review-footer">
+                  <div class="review-google">
+                    <svg width="16" height="16" viewBox="0 0 24 24">
+                      <path fill="#4285F4"
+                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                      <path fill="#34A853"
+                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                      <path fill="#FBBC05"
+                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" />
+                      <path fill="#EA4335"
+                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                    </svg>
+                    Google Review
+                  </div>
+                  <span class="review-badge">✔ Verified</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="video-card" onclick="openTestimonialVideo(this)" role="button" tabindex="0"
+                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault(); openTestimonialVideo(this);}">
+                <video src="assets/videos/third.mp4" data-video="assets/videos/third.mp4" playsinline preload="metadata"
+                  disablepictureinpicture controlsList="nofullscreen nodownload noremoteplayback"></video>
+                <div class="play" aria-hidden="true">▶</div>
+              </div>
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="review-avatar gold">R</div>
+                  <div>
+                    <div class="review-name">Rahul Mehta</div>
+                    <div class="review-stars">★★★★★</div>
+                  </div>
+                </div>
+                <p class="review-text">"I felt weak and restricted for years and tried many programs — nothing clicked.
+                  After the RC5 Elite Motion workshop, it was a total game changer. My movement is so much more freer
+                  and I feel strong and agile again!"</p>
+                <div class="review-footer">
+                  <div class="review-google">
+                    <svg width="16" height="16" viewBox="0 0 24 24">
+                      <path fill="#4285F4"
+                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                      <path fill="#34A853"
+                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                      <path fill="#FBBC05"
+                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" />
+                      <path fill="#EA4335"
+                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                    </svg>
+                    Google Review
+                  </div>
+                  <span class="review-badge">✔ Verified</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="video-card" onclick="openTestimonialVideo(this)" role="button" tabindex="0"
+                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault(); openTestimonialVideo(this);}">
+                <video src="assets/videos/fourth.mp4" data-video="assets/videos/fourth.mp4" playsinline
+                  preload="metadata" disablepictureinpicture
+                  controlsList="nofullscreen nodownload noremoteplayback"></video>
+                <div class="play" aria-hidden="true">▶</div>
+              </div>
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="review-avatar">D</div>
+                  <div>
+                    <div class="review-name">Divya Patel</div>
+                    <div class="review-stars">★★★★★</div>
+                  </div>
+                </div>
+                <p class="review-text">"My stiffness was affecting my sleep and focus at work. After this workshop, I
+                  finally understood how my body works. Now I feel lighter, stronger, and full of energy. Thank you RC5
+                  for this incredible experience!"</p>
+                <div class="review-footer">
+                  <div class="review-google">
+                    <svg width="16" height="16" viewBox="0 0 24 24">
+                      <path fill="#4285F4"
+                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                      <path fill="#34A853"
+                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                      <path fill="#FBBC05"
+                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" />
+                      <path fill="#EA4335"
+                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                    </svg>
+                    Google Review
+                  </div>
+                  <span class="review-badge">✔ Verified</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="video-card" onclick="openTestimonialVideo(this)" role="button" tabindex="0"
+                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault(); openTestimonialVideo(this);}">
+                <video src="assets/videos/second.mp4" data-video="assets/videos/second.mp4" playsinline
+                  preload="metadata" disablepictureinpicture
+                  controlsList="nofullscreen nodownload noremoteplayback"></video>
+                <div class="play" aria-hidden="true">▶</div>
+              </div>
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="review-avatar">N</div>
+                  <div>
+                    <div class="review-name">Neha Sharma</div>
+                    <div class="review-stars">★★★★★</div>
+                  </div>
+                </div>
+                <p class="review-text">"Before joining RC5, I felt stiff and low on energy every single day. This
+                  workshop completely changed how I move and feel. I'm so much more mobile, confident, and doing the
+                  sessions daily. Truly life-changing!"</p>
+                <div class="review-footer">
+                  <div class="review-google">
+                    <svg width="16" height="16" viewBox="0 0 24 24">
+                      <path fill="#4285F4"
+                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                      <path fill="#34A853"
+                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                      <path fill="#FBBC05"
+                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" />
+                      <path fill="#EA4335"
+                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                    </svg>
+                    Google Review
+                  </div>
+                  <span class="review-badge">✔ Verified</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="video-card" onclick="openTestimonialVideo(this)" role="button" tabindex="0"
+                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault(); openTestimonialVideo(this);}">
+                <video src="assets/videos/third.mp4" data-video="assets/videos/third.mp4" playsinline preload="metadata"
+                  disablepictureinpicture controlsList="nofullscreen nodownload noremoteplayback"></video>
+                <div class="play" aria-hidden="true">▶</div>
+              </div>
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="review-avatar gold">R</div>
+                  <div>
+                    <div class="review-name">Rahul Mehta</div>
+                    <div class="review-stars">★★★★★</div>
+                  </div>
+                </div>
+                <p class="review-text">"I felt weak and restricted for years and tried many programs — nothing clicked.
+                  After the RC5 Elite Motion workshop, it was a total game changer. My movement is so much more freer
+                  and I feel strong and agile again!"</p>
+                <div class="review-footer">
+                  <div class="review-google">
+                    <svg width="16" height="16" viewBox="0 0 24 24">
+                      <path fill="#4285F4"
+                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                      <path fill="#34A853"
+                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                      <path fill="#FBBC05"
+                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" />
+                      <path fill="#EA4335"
+                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                    </svg>
+                    Google Review
+                  </div>
+                  <span class="review-badge">✔ Verified</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="video-card" onclick="openTestimonialVideo(this)" role="button" tabindex="0"
+                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault(); openTestimonialVideo(this);}">
+                <video src="assets/videos/fourth.mp4" data-video="assets/videos/fourth.mp4" playsinline
+                  preload="metadata" disablepictureinpicture
+                  controlsList="nofullscreen nodownload noremoteplayback"></video>
+                <div class="play" aria-hidden="true">▶</div>
+              </div>
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="review-avatar">D</div>
+                  <div>
+                    <div class="review-name">Divya Patel</div>
+                    <div class="review-stars">★★★★★</div>
+                  </div>
+                </div>
+                <p class="review-text">"My stiffness was affecting my sleep and focus at work. After this workshop, I
+                  finally understood how my body works. Now I feel lighter, stronger, and full of energy. Thank you RC5
+                  for this incredible experience!"</p>
+                <div class="review-footer">
+                  <div class="review-google">
+                    <svg width="16" height="16" viewBox="0 0 24 24">
+                      <path fill="#4285F4"
+                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                      <path fill="#34A853"
+                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                      <path fill="#FBBC05"
+                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" />
+                      <path fill="#EA4335"
+                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                    </svg>
+                    Google Review
+                  </div>
+                  <span class="review-badge">✔ Verified</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: RC5 Workshop Framework -->
+    <section class="section workshop-section">
+      <div class="content">
+        <h2 class="section-title workshop-title" style="text-align:center;color:var(--navy);">What Will We Cover in the Workshop?</h2>
+        <div class="sub workshop-sub" style="text-align:center;max-width:760px;margin:16px auto 0;">Learn how the proven RC5 Method
+          can help you start experiencing pain reduction and better movement over time with consistent participation,
+          depending on your condition.</div>
+
+        <div class="framework-grid">
+          <div class="framework-card">
+            <div class="framework-icon">RC-1</div>
+            <h3>Root Cause Analysis</h3>
+            <p>Identify the underlying cause of your spine, knee, or neck pain instead of just treating the symptoms.
+            </p>
+          </div>
+          <div class="framework-card">
+            <div class="framework-icon">RC-2</div>
+            <h3>Advanced Muscle Release</h3>
+            <p>Help relieve muscle tightness and stiffness to reduce discomfort and improve flexibility.</p>
+          </div>
+          <div class="framework-card">
+            <div class="framework-icon">RC-3</div>
+            <h3>Structural Strength Correction</h3>
+            <p>Build strength and stability in key muscles to better support your joints and spine.</p>
+          </div>
+          <div class="framework-card">
+            <div class="framework-icon">RC-4</div>
+            <h3>Movement Freedom Restoration</h3>
+            <p>Improve mobility, posture, and movement patterns so everyday activities become easier and more
+              comfortable.</p>
+          </div>
+          <div class="framework-card">
+            <div class="framework-icon">RC-5</div>
+            <h3>Total Recovery Optimization</h3>
+            <p>Create a personalized recovery plan focused on long-term pain management, improved function, and reducing
+              the chances of recurring pain.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7: Audience Profile -->
+    <section class="section alt">
+      <div class="content">
+        <h2 class="section-title" style="text-align:center;color:var(--navy);">Who is this Workshop For?</h2>
+        <div class="sub" style="text-align:center;max-width:760px;margin:16px auto 0;">This workshop is designed for
+          people who want to reduce pain naturally, improve movement, and enjoy a healthier, more active lifestyle.
+        </div>
+
+        <div class="audience-grid">
+          <div class="audience-card">
+            <div class="audience-icon">🏃</div>
+            <h3>Active Individuals</h3>
+            <p>People who want to stay active but are held back by recurring back, neck, knee, or joint pain.</p>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon">🏋️</div>
+            <h3>Fitness Enthusiasts</h3>
+            <p>Those experiencing pain or stiffness during workouts and looking to move pain-free without giving up an
+              active lifestyle.</p>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon" aria-label="Steering wheel icon" role="img">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="12" cy="12" r="6.5" stroke="currentColor" stroke-width="1.9"/>
+                <path d="M12 2.8V6.4M12 17.6V21.2M2.8 12H6.4M17.6 12H21.2M5.4 5.4L7.8 7.8M16.2 16.2L18.6 18.6M18.6 5.4L16.2 7.8M7.8 16.2L5.4 18.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Frequent Travelers & Drivers</h3>
+            <p>Individuals suffering from prolonged sitting, driving, or commuting that leads to neck, shoulder, and
+              lower back pain.</p>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon">🏠</div>
+            <h3>Homemakers</h3>
+            <p>People experiencing pain from cooking, cleaning, lifting, and household work who want to move comfortably
+              again.</p>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon">🧑‍🦽</div>
+            <h3>Anyone Living with Chronic Pain</h3>
+            <p>Anyone dealing with persistent spine, neck, knee, or joint pain who wants a long-term solution instead of
+              temporary relief.</p>
+          </div>
+        </div>
+
+        <div class="section-cta" style="text-align:center;margin-top:40px;">
+          <button class="book-now-btn" onclick="openBooking()">Book Your Session <span
+              class="book-arrow">→</span></button>
+          <div class="book-guarantee text-boost" style="justify-content:center;margin-top:12px;"><span class="hl">₹99</span> Only
+          </div>
+          <div class="book-guarantee text-boost" style="justify-content:center;margin-top:8px;"><span class="book-check">✔</span> <span class="hl">100%</span>
+            Money Back Guarantee</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8 PART 2: FAQ -->
+    <section class="section alt faq-section">
+      <div class="content">
+        <div class="testimonial-head">
+          <h2>Frequently Asked <span class="hl">Questions</span></h2>
+          <div class="sub">Find answers to the most common questions about the RC5 Live Workshop and Recovery System.
+          </div>
+        </div>
+
+        <div class="faq-grid">
+          <article class="faq-card open">
+            <button class="faq-toggle" type="button" aria-expanded="true">
+              <span>Can you guarantee complete pain relief for severe conditions?</span>
+              <span class="faq-icon">−</span>
+            </button>
+            <div class="faq-answer">
+              <p>RC5 is a structured root-cause recovery system designed to help reduce pain, restore movement, and
+                improve overall body function. While thousands of people have experienced remarkable improvements, every
+                person's recovery depends on factors such as the severity of the condition, lifestyle, and commitment to
+                following the program. Our goal is to help you achieve long-term, sustainable results—not temporary
+                relief.</p>
+            </div>
+          </article>
+          <article class="faq-card">
+            <button class="faq-toggle" type="button" aria-expanded="false">
+              <span>What is RC5 Therapy?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>RC5 (Root Cause 5-Step Recovery System) is a scientifically designed recovery framework that focuses on
+                eliminating the root cause of spine, neck, and knee pain—not just the symptoms.</p>
+              <p>It includes:</p>
+              <ul>
+                <li><strong>RC1</strong> — Root Cause Analysis</li>
+                <li><strong>RC2</strong> — Advanced Muscle Release</li>
+                <li><strong>RC3</strong> — Structural Strength Correction</li>
+                <li><strong>RC4</strong> — Movement Freedom Restoration</li>
+                <li><strong>RC5</strong> — Total Recovery Optimization</li>
+              </ul>
+              <p>Together, these five phases help restore strength, mobility, posture, and long-term pain-free movement.
+              </p>
+            </div>
+          </article>
+          <article class="faq-card">
+            <button class="faq-toggle" type="button" aria-expanded="false">
+              <span>How do you deliver this therapy?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>The RC5 Workshop is conducted <strong class="emphasis">live online</strong> over <strong
+                  class="emphasis">two days</strong> through a private video session. Once your seat is confirmed,
+                you'll instantly receive your joining details via WhatsApp and email. The workshop is delivered in both
+                Hindi and English, making it easy for the entire family to understand and participate.</p>
+            </div>
+          </article>
+          <article class="faq-card">
+            <button class="faq-toggle" type="button" aria-expanded="false">
+              <span>Do I need any special equipment to join this Workshop?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>No. You only need a smartphone, tablet, or laptop with a stable internet connection. Keep a yoga mat or
+                flat surface ready and wear comfortable clothing so you can actively participate in the guided
+                movements.</p>
+            </div>
+          </article>
+          <article class="faq-card">
+            <button class="faq-toggle" type="button" aria-expanded="false">
+              <span>How is RC5 different from other pain relief methods?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Most treatments focus on managing pain temporarily through medicines, injections, massages, or generic
+                exercises.</p>
+              <p>RC5 is a complete root-cause recovery system that combines scientific assessment, muscle correction,
+                structural strengthening, movement restoration, and long-term recovery optimization.</p>
+              <p>Every participant also receives a <strong class="emphasis">personalized live pain assessment</strong>,
+                making the experience tailored to their condition.</p>
+            </div>
+          </article>
+          <article class="faq-card">
+            <button class="faq-toggle" type="button" aria-expanded="false">
+              <span>How can I join the Workshop?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Simply click the "Book Your Session" button, complete your secure registration through Razorpay, and
+                you'll instantly receive your workshop access link via WhatsApp and email.</p>
+              <p>Join us live and take your first step toward lasting pain relief.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="disclaimer-card">
+          <h3>Important Disclaimer</h3>
+          <p>RC5 · RC5 Root Cause Recovery System™️</p>
+          <p>All content, workshops, and RC5 programs are intended for educational and wellness purposes only and do not
+            guarantee specific results. RC5 is a non-invasive, movement-based recovery system designed to support pain
+            relief and improved mobility. It is not a substitute for professional medical diagnosis, treatment, or
+            advice. Please consult a qualified healthcare professional before beginning any exercise or recovery
+            program, especially if you have an existing medical condition.</p>
+          <p>Individual results may vary depending on the nature of the condition, medical history, consistency, and
+            adherence to the RC5 methodology.</p>
+          <p>This website is not affiliated with or endorsed by Meta. Facebook and Instagram are trademarks of Meta
+            Platforms, Inc.</p>
+        </div>
+
+        <!-- <div class="section-cta" style="text-align:center;margin-top:40px;">
+          <button class="book-now-btn" onclick="openBooking()">Book Your Session <span
+              class="book-arrow">→</span></button>
+          <div class="book-guarantee" style="justify-content:center;margin-top:12px;"><span class="hl">₹99</span> Only
+          </div>
+          <div class="book-guarantee" style="justify-content:center;margin-top:8px;"><span class="book-check">✔</span> <span class="hl">100%</span>
+            Money Back Guarantee</div>
+         -->
+      </div>
+    </section>
+
+    <footer>
+      <div class="content footer-row">
+        <div class="footer-nav">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+          <a href="terms.html#refund">Refund Policy</a>
+        </div>
+        <div class="footer-right">
+          <span>© 2026 RC5. All Rights Reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Consultation Modal -->
+  <div class="modal-overlay" id="consultationOverlay">
+    <div class="modal-box appt-modal-box">
+      <button class="modal-close" onclick="closeConsultation()">✕</button>
+      <div class="modal-title">Book 1-to-1 Consultation</div>
+      <div class="modal-sub">Get personalized expert guidance and a customized recovery plan from an RC5 Elite Motion
+        Expert.</div>
+
+      <div class="field">
+        <label>Full Name *</label>
+        <input type="text" id="cName" placeholder="e.g. Priya Sharma">
+        <div class="field-error" id="cErrName">Please enter your name.</div>
+      </div>
+      <div class="field">
+        <label>Mobile Number *</label>
+        <input type="tel" id="cMobile" placeholder="e.g. 9876543210" inputmode="numeric" maxlength="10">
+        <div class="field-error" id="cErrMobile">Please enter a valid 10-digit number.</div>
+      </div>
+      <div class="field">
+        <label>Email Address <span style="font-weight:400;color:var(--text-sec);">(Optional)</span></label>
+        <input type="email" id="cEmail" placeholder="e.g. priya@email.com">
+      </div>
+      <div class="appt-row-2">
+        <div class="field">
+          <label>Age *</label>
+          <input type="number" id="cAge" placeholder="e.g. 35" min="1" max="120">
+          <div class="field-error" id="cErrAge">Please enter age.</div>
+        </div>
+        <div class="field">
+          <label>Gender *</label>
+          <select id="cGender">
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+          <div class="field-error" id="cErrGender">Please select gender.</div>
+        </div>
+      </div>
+      <div class="field">
+        <label>Pain Area *</label>
+        <select id="cPainArea">
+          <option value="">Select pain area</option>
+          <option>Back Pain</option>
+          <option>Neck Pain</option>
+          <option>Shoulder Pain</option>
+          <option>Knee Pain</option>
+          <option>Ankle Pain</option>
+          <option>Multiple Pain Areas</option>
+        </select>
+        <div class="field-error" id="cErrPainArea">Please select a pain area.</div>
+      </div>
+      <div class="field">
+        <label>Pain Duration *</label>
+        <select id="cPainDuration">
+          <option value="">Select duration</option>
+          <option>Less than 1 Week</option>
+          <option>1–4 Weeks</option>
+          <option>1–3 Months</option>
+          <option>3–6 Months</option>
+          <option>More than 6 Months</option>
+        </select>
+        <div class="field-error" id="cErrPainDuration">Please select pain duration.</div>
+      </div>
+      <div class="field">
+        <label>Describe Your Pain</label>
+        <textarea id="cDescription" placeholder="Briefly describe your pain, symptoms, or concerns."></textarea>
+      </div>
+      <div class="field">
+        <label>Preferred Consultation Date *</label>
+        <input type="date" id="cPrefDate" min="">
+        <div class="field-error" id="cErrDate">Please select a preferred date.</div>
+      </div>
+      <div class="field">
+        <label>Preferred Time Slot *</label>
+        <div class="appt-slot-grid" id="cSlotGrid"></div>
+        <div class="field-error" id="cErrSlot">Please select a time slot.</div>
+      </div>
+
+      <div class="consult-info-card">
+        <div class="ci-item"><span class="ci-check">✔</span> Personalized Pain Assessment</div>
+        <div class="ci-item"><span class="ci-check">✔</span> Root Cause Analysis</div>
+        <div class="ci-item"><span class="ci-check">✔</span> Customized Recovery Plan</div>
+        <div class="ci-item"><span class="ci-check">✔</span> One-to-One Expert Guidance</div>
+      </div>
+
+      <button class="btn btn-orange modal-submit" id="cSubmitBtn" onclick="submitConsultation()">Book Consultation
+        →</button>
+      <div class="form-note">Our team will contact you within 24 hours to confirm your slot.</div>
+    </div>
+  </div>
+
+  <!-- Consultation Success Modal -->
+  <div class="modal-overlay" id="consultSuccessOverlay">
+    <div class="modal-box" style="text-align:center;">
+      <div class="confirm-icon">✓</div>
+      <div class="status-badge confirmed">✅ Consultation Request Submitted Successfully!</div>
+      <div class="confirm-title" style="margin-top:12px;">Request Received!</div>
+      <div class="confirm-sub">Our RC5 Expert will contact you within 24 hours via WhatsApp or phone to confirm your
+        consultation.</div>
+      <div class="confirm-details">
+        <div class="confirm-row"><span class="k">Consultation ID</span><span class="v" id="csConId"></span></div>
+        <div class="confirm-row"><span class="k">Name</span><span class="v" id="csConName"></span></div>
+        <div class="confirm-row"><span class="k">Preferred Date</span><span class="v" id="csConDate"></span></div>
+        <div class="confirm-row"><span class="k">Preferred Time</span><span class="v" id="csConTime"></span></div>
+      </div>
+      <a href="https://chat.whatsapp.com/BrE3tXl7FyQ8S32fgSX9L2" target="_blank" rel="noopener noreferrer"
+        class="btn btn-whatsapp-community">💬 Join RC5 WhatsApp Community</a>
+      <button class="btn btn-orange" style="width:100%;height:50px;" onclick="closeConsultSuccess()">Done</button>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay" id="successOverlay">
+    <div class="modal-box" style="text-align:center;">
+      <div class="confirm-icon">✓</div>
+      <div class="status-badge confirmed">✅ Booking Confirmed</div>
+      <div class="confirm-title" style="margin-top:12px;">🎉 Booking Successful!</div>
+      <div class="confirm-sub">Your workshop seat is confirmed and payment received.<br>A WhatsApp confirmation has been
+        sent to your mobile number.</div>
+      <div class="confirm-details">
+        <div class="confirm-row"><span class="k">Booking ID</span><span class="v" id="sConId"></span></div>
+        <div class="confirm-row"><span class="k">Payment ID</span><span class="v" id="sConPayId"></span></div>
+        <div class="confirm-row"><span class="k">Name</span><span class="v" id="sConName"></span></div>
+        <div class="confirm-row"><span class="k">Workshop Date</span><span class="v" id="sConDate"></span></div>
+        <div class="confirm-row"><span class="k">Time Slot</span><span class="v" id="sConTime"></span></div>
+        <div class="confirm-row"><span class="k">Focus Area</span><span class="v" id="sConTreatment"></span></div>
+        <div class="confirm-row"><span class="k">Payment</span><span class="v" style="color:#1D8A4E;">Paid ✓</span>
+        </div>
+      </div>
+      <button class="btn btn-orange" style="width:100%;height:50px;" onclick="closeSuccessModal()">Go Back to
+        Home</button>
+    </div>
+  </div>
+
+  <!-- Video Modal -->
+  <div class="modal-overlay" id="videoModal"
+    style="background:rgba(15,45-2,.82);align-items:center;justify-content:center;">
+    <div class="video-modal-box">
+      <button onclick="closeVideoModal()"
+        style="position:absolute;top:10px;right:10px;z-index:10;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px);">×</button>
+      <video id="heroVideo" controls playsinline
+        style="width:100%;height:auto;max-height:85vh;object-fit:contain;display:block;border-radius:12px;">
+        <source src="assets/videos/main.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="bookingOverlay">
+    <div class="modal-box appt-modal-box">
+
+      <!-- STEP 1 : Form -->
+      <div id="bStep1">
+        <button class="modal-close" onclick="closeBooking()">✕</button>
+        <div class="modal-title">Reserve Your Seat</div>
+        <div class="modal-sub">Fill in your details to secure your workshop slot.</div>
+
+        <div class="field">
+          <label>Full Name</label>
+          <input type="text" id="bName" placeholder="e.g. Priya Sharma">
+          <div class="field-error" id="bErrName">Please enter your name.</div>
+        </div>
+        <div class="field">
+          <label>Mobile Number</label>
+          <input type="tel" id="bMobile" placeholder="e.g. 9876543210" inputmode="numeric" maxlength="10">
+          <div class="field-error" id="bErrMobile">Please enter a valid 10-digit number.</div>
+        </div>
+        <div class="appt-row-2">
+          <div class="field">
+            <label>Age</label>
+            <input type="number" id="bAge" placeholder="e.g. 32" min="1" max="120">
+            <div class="field-error" id="bErrAge">Please enter age.</div>
+          </div>
+          <div class="field">
+            <label>Gender</label>
+            <select id="bGender">
+              <option value="">Select</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+            <div class="field-error" id="bErrGender">Please select gender.</div>
+          </div>
+        </div>
+        <div class="field">
+          <label>Select Your Goal</label>
+          <select id="bTreatment">
+            <option value="">Select your goal</option>
+            <option>Back Pain Relief</option>
+            <option>Neck Pain Relief</option>
+            <option>Knee Pain Relief</option>
+            <option>Shoulder Pain Relief</option>
+            <option>Ankle Pain Relief</option>
+            <option>Spine Pain Relief</option>
+            <option>Joint Pain Relief</option>
+            <option>Sciatica Pain Management</option>
+            <option>Improve Posture</option>
+            <option>Improve Mobility &amp; Flexibility</option>
+            <option>Muscle Stiffness Relief</option>
+            <option>Recover from Sports Injury</option>
+            <option>Reduce Chronic Pain</option>
+            <option>Improve Daily Movement</option>
+            <option>Pain-Free Walking</option>
+            <option>Pain-Free Sitting &amp; Working</option>
+            <option>Pain-Free Exercise</option>
+            <option>Strength &amp; Stability Improvement</option>
+            <option>Personalized Pain Assessment</option>
+            <option>Learn the RC5 Recovery Method</option>
+            <option>General Pain Recovery Consultation</option>
+          </select>
+          <div class="field-error" id="bErrTreatment">Please select a goal.</div>
+        </div>
+        <div class="field">
+          <label>Choose Date</label>
+          <div class="appt-calendar" id="bCalendar"></div>
+          <div class="field-error" id="bErrDate">Please select a date.</div>
+        </div>
+        <div class="field">
+          <label>Choose Time Slot <span class="slot-note-inline">(7 AM – 9 PM – 1-hr sessions)</span></label>
+          <div class="appt-slot-grid" id="bSlotGrid"></div>
+          <div class="field-error" id="bErrSlot">Please select a time slot.</div>
+        </div>
+
+        <div class="appt-modal-footer">
+          <div class="appt-price">
+            <span class="appt-price-val">₹99</span>
+            <span class="appt-price-old">₹1500</span>
+          </div>
+          <button class="btn btn-orange modal-submit" id="bBookBtn" onclick="submitBooking()">BOOK APPOINTMENT
+            →</button>
+        </div>
+        <div class="form-note">Your seat will be reserved. Payment on next step.</div>
+      </div>
+
+      <!-- STEP 2 : Reserved — Proceed to Payment -->
+      <div id="bStep2" style="display:none;">
+        <button class="modal-close" onclick="closeBooking()">✕</button>
+        <div class="status-badge reserved">⏳ Reserved — Payment Pending</div>
+        <div class="confirm-title" style="margin-top:12px;">Seat Reserved!</div>
+        <div class="confirm-sub">Complete payment to confirm your workshop seat.</div>
+        <div class="confirm-details">
+          <div class="confirm-row"><span class="k">Booking ID</span><span class="v" id="bResId"></span></div>
+          <div class="confirm-row"><span class="k">Name</span><span class="v" id="bResName"></span></div>
+          <div class="confirm-row"><span class="k">Date</span><span class="v" id="bResDate"></span></div>
+          <div class="confirm-row"><span class="k">Time</span><span class="v" id="bResTime"></span></div>
+          <div class="confirm-row"><span class="k">Focus Area</span><span class="v" id="bResTreatment"></span></div>
+          <div class="confirm-row"><span class="k">Status</span><span class="v" style="color:#E4351B;">Reserved (Payment
+              Pending)</span></div>
+          <div class="confirm-row"><span class="k">Amount</span><span class="v">₹99</span></div>
+        </div>
+        <button class="btn btn-orange modal-submit" id="bPayBtn" onclick="proceedToPayment()">PROCEED TO PAYMENT
+          →</button>
+        <div class="form-note">Secure payment via Razorpay • UPI • Cards • Net Banking • Wallets</div>
+      </div>
+
+      <!-- STEP 3 : Confirmed / Paid -->
+      <div id="bStep3" style="display:none;">
+        <button class="modal-close" onclick="closeBooking()">✕</button>
+        <div class="confirm-icon">✓</div>
+        <div class="status-badge confirmed">✅ Booking Confirmed</div>
+        <div class="confirm-title" style="margin-top:12px;">Seat Confirmed!</div>
+        <div class="confirm-sub">Your workshop seat is booked and payment received.</div>
+        <div class="confirm-details">
+          <div class="confirm-row"><span class="k">Booking ID</span><span class="v" id="bConId"></span></div>
+          <div class="confirm-row"><span class="k">Payment ID</span><span class="v" id="bConPayId"></span></div>
+          <div class="confirm-row"><span class="k">Name</span><span class="v" id="bConName"></span></div>
+          <div class="confirm-row"><span class="k">Date</span><span class="v" id="bConDate"></span></div>
+          <div class="confirm-row"><span class="k">Time</span><span class="v" id="bConTime"></span></div>
+          <div class="confirm-row"><span class="k">Focus Area</span><span class="v" id="bConTreatment"></span></div>
+          <div class="confirm-row"><span class="k">Payment Status</span><span class="v" style="color:#1D8A4E;">Paid
+              ✓</span></div>
+          <div class="confirm-row"><span class="k">Amount Paid</span><span class="v">₹99</span></div>
+        </div>
+        <div class="form-note">The RC5 team will reach out on WhatsApp with your session details.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+     PAY NOW MODAL  — for existing reservation
+══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="payNowOverlay">
+    <div class="modal-box">
+
+      <!-- Input step -->
+      <div id="pStep1">
+        <button class="modal-close" onclick="closePayNow()">✕</button>
+        <div class="modal-title">Pay Now</div>
+        <div class="modal-sub">Enter your Booking ID to complete payment.</div>
+        <div class="field">
+          <label>Booking ID</label>
+          <input type="text" id="pBookingId" placeholder="e.g. RC500001" style="text-transform:uppercase;">
+          <div class="field-error" id="pErrId">Please enter a valid Booking ID.</div>
+        </div>
+        <button class="btn btn-orange modal-submit" onclick="lookupAndPay()">FIND &amp; PAY →</button>
+        <div class="form-note">Already reserved a slot? Enter your Booking ID to pay ₹99.</div>
+      </div>
+
+      <!-- Confirm + pay step -->
+      <div id="pStep2" style="display:none;">
+        <button class="modal-close" onclick="closePayNow()">✕</button>
+        <div class="modal-title">Complete Payment</div>
+        <div class="confirm-details" style="margin-bottom:16px;">
+          <div class="confirm-row"><span class="k">Booking ID</span><span class="v" id="pConId"></span></div>
+          <div class="confirm-row"><span class="k">Name</span><span class="v" id="pConName"></span></div>
+          <div class="confirm-row"><span class="k">Date</span><span class="v" id="pConDate"></span></div>
+          <div class="confirm-row"><span class="k">Time</span><span class="v" id="pConTime"></span></div>
+          <div class="confirm-row"><span class="k">Focus Area</span><span class="v" id="pConTreatment"></span></div>
+          <div class="confirm-row"><span class="k">Amount</span><span class="v">₹99</span></div>
+        </div>
+        <button class="btn btn-orange modal-submit" id="pPayBtn" onclick="payForReservation()">PAY ₹99 NOW →</button>
+        <div class="form-note">Secure payment via Razorpay • UPI • Cards • Net Banking • Wallets</div>
+      </div>
+
+      <!-- Paid step -->
+      <div id="pStep3" style="display:none;">
+        <button class="modal-close" onclick="closePayNow()">✕</button>
+        <div class="confirm-icon">✓</div>
+        <div class="status-badge confirmed">✅ Booking Confirmed</div>
+        <div class="confirm-title" style="margin-top:12px;">Payment Successful!</div>
+        <div class="confirm-details">
+          <div class="confirm-row"><span class="k">Booking ID</span><span class="v" id="pPaidId"></span></div>
+          <div class="confirm-row"><span class="k">Payment ID</span><span class="v" id="pPaidPayId"></span></div>
+          <div class="confirm-row"><span class="k">Name</span><span class="v" id="pPaidName"></span></div>
+          <div class="confirm-row"><span class="k">Date</span><span class="v" id="pPaidDate"></span></div>
+          <div class="confirm-row"><span class="k">Time</span><span class="v" id="pPaidTime"></span></div>
+          <div class="confirm-row"><span class="k">Payment Status</span><span class="v" style="color:#1D8A4E;">Paid
+              ✓</span></div>
+        </div>
+        <div class="form-note">The RC5 team will reach out on WhatsApp with your session details.</div>
+      </div>
+
+    </div>
+  </div>
+  <script>
+    // -- Consultation Modal --
+    var C_SLOTS = ['06:00 PM', '07:00 PM', '08:00 PM', '09:00 PM'];
+    var cSelectedSlot = null;
+
+    function openConsultation() {
+      cSelectedSlot = null;
+      ['cName', 'cMobile', 'cEmail', 'cAge', 'cDescription', 'cPrefDate'].forEach(function (id) {
+        var el = document.getElementById(id); if (el) el.value = '';
+      });
+      ['cGender', 'cPainArea', 'cPainDuration'].forEach(function (id) {
+        var el = document.getElementById(id); if (el) el.value = '';
+      });
+      ['cErrName', 'cErrMobile', 'cErrAge', 'cErrGender', 'cErrPainArea', 'cErrPainDuration', 'cErrDate', 'cErrSlot'].forEach(function (id) {
+        var el = document.getElementById(id); if (el) el.style.display = 'none';
+      });
+      var today = new Date();
+      var mm = String(today.getMonth() + 1).padStart(2, '0');
+      var dd = String(today.getDate()).padStart(2, '0');
+      document.getElementById('cPrefDate').min = today.getFullYear() + '-' + mm + '-' + dd;
+      renderCSlots();
+      var btn = document.getElementById('cSubmitBtn');
+      btn.textContent = 'Book Consultation';
+      btn.disabled = false;
+      document.getElementById('consultationOverlay').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeConsultation() {
+      document.getElementById('consultationOverlay').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function closeConsultSuccess() {
+      document.getElementById('consultSuccessOverlay').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('consultationOverlay').addEventListener('click', function (e) {
+      if (e.target === this) closeConsultation();
+    });
+    document.getElementById('consultSuccessOverlay').addEventListener('click', function (e) {
+      if (e.target === this) closeConsultSuccess();
+    });
+
+    function renderCSlots() {
+      var grid = document.getElementById('cSlotGrid');
+      grid.innerHTML = '';
+      C_SLOTS.forEach(function (slot) {
+        var chip = document.createElement('div');
+        chip.className = 'appt-slot-chip' + (cSelectedSlot === slot ? ' active' : '');
+        chip.textContent = slot;
+        chip.onclick = function () {
+          cSelectedSlot = slot;
+          renderCSlots();
+          document.getElementById('cErrSlot').style.display = 'none';
+        };
+        grid.appendChild(chip);
+      });
+    }
+
+    async function submitConsultation() {
+      var name = document.getElementById('cName').value.trim();
+      var mobile = document.getElementById('cMobile').value.trim();
+      var age = document.getElementById('cAge').value.trim();
+      var gender = document.getElementById('cGender').value;
+      var painArea = document.getElementById('cPainArea').value;
+      var painDuration = document.getElementById('cPainDuration').value;
+      var prefDate = document.getElementById('cPrefDate').value;
+      var email = document.getElementById('cEmail').value.trim();
+      var description = document.getElementById('cDescription').value.trim();
+
+      var ok = true;
+      function showErr(id, cond) {
+        var el = document.getElementById(id);
+        el.style.display = cond ? 'none' : 'block';
+        if (!cond) ok = false;
+      }
+      showErr('cErrName', !!name);
+      showErr('cErrMobile', /^\d{10}$/.test(mobile));
+      showErr('cErrAge', !!age && +age > 0 && +age <= 120);
+      showErr('cErrGender', !!gender);
+      showErr('cErrPainArea', !!painArea);
+      showErr('cErrPainDuration', !!painDuration);
+      showErr('cErrDate', !!prefDate);
+      showErr('cErrSlot', !!cSelectedSlot);
+      if (!ok) return;
+
+      var btn = document.getElementById('cSubmitBtn');
+      btn.textContent = 'Please wait...';
+      btn.disabled = true;
+
+      try {
+        var res = await fetch('http://127.0.0.1:3000/api/consultations/book', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: name, mobile: mobile, email: email, age: age, gender: gender,
+            pain_area: painArea, pain_duration: painDuration,
+            description: description, pref_date: prefDate, pref_time: cSelectedSlot
+          })
+        });
+        var data = await res.json();
+        if (!res.ok) throw new Error(data.error || 'Submission failed');
+
+        if (!data.orderId) {
+          alert('Payment gateway not configured. Please contact the clinic.');
+          btn.textContent = 'Book Consultation';
+          btn.disabled = false;
+          return;
+        }
+
+        // Open Razorpay for ₹249 consultation payment
+        var cRzpInstance = null;
+        var cOptions = {
+          key: data.keyId,
+          amount: data.amount,
+          currency: 'INR',
+          name: 'RC5 Elite Motion',
+          description: '1-to-1 Consultation',
+          order_id: data.orderId,
+          prefill: { name: name, contact: mobile },
+          theme: { color: '#D4A017' },
+          handler: async function (response) {
+            try {
+              var vRes = await fetch('http://127.0.0.1:3000/api/consultations/verify-payment', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  razorpay_order_id: response.razorpay_order_id,
+                  razorpay_payment_id: response.razorpay_payment_id,
+                  razorpay_signature: response.razorpay_signature,
+                  consultation_id: data.consultationId
+                })
+              });
+              var vData = await vRes.json();
+              if (!vRes.ok) throw new Error(vData.error || 'Verification failed');
+              if (cRzpInstance) { try { cRzpInstance.close(); } catch (_) { } cRzpInstance = null; }
+              closeConsultation();
+              document.getElementById('csConId').textContent = vData.consultationId;
+              document.getElementById('csConName').textContent = vData.name;
+              document.getElementById('csConDate').textContent = vData.pref_date;
+              document.getElementById('csConTime').textContent = vData.pref_time;
+              document.getElementById('consultSuccessOverlay').classList.add('open');
+              document.body.style.overflow = 'hidden';
+            } catch (e) {
+              alert('Payment error: ' + e.message);
+            }
+          },
+          modal: { ondismiss: function () { cRzpInstance = null; btn.textContent = 'Book Consultation'; btn.disabled = false; } }
+        };
+        cRzpInstance = new Razorpay(cOptions);
+        cRzpInstance.open();
+        btn.textContent = 'Book Consultation';
+        btn.disabled = false;
+
+      } catch (e) {
+        alert('Error: ' + e.message);
+        btn.textContent = 'Book Consultation';
+        btn.disabled = false;
+      }
+    }
+
+    // -- Testimonial Video --
+    function openTestimonialVideo(card) {
+      var video = card.querySelector('video');
+      var source = video.getAttribute('data-video') || video.getAttribute('src') || 'assets/videos/main.mp4';
+      openVideoModal(source);
+    }
+
+    function initVideoBadges() {
+      document.querySelectorAll('.video-card').forEach(function (card) {
+        if (!card.querySelector('.video-badge')) {
+          var badge = document.createElement('div');
+          badge.className = 'video-badge';
+          card.appendChild(badge);
+        }
+      });
+    }
+    initVideoBadges();
+
+    // -- Video Modal --
+    function openVideoModal(videoSrc) {
+      var modal = document.getElementById('videoModal');
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      var heroVideo = document.getElementById('heroVideo');
+      heroVideo.setAttribute('src', videoSrc || 'assets/videos/main.mp4');
+      heroVideo.load();
+      heroVideo.play().catch(function () { });
+    }
+    function closeVideoModal() {
+      document.getElementById('videoModal').classList.remove('open');
+      document.body.style.overflow = '';
+      var v = document.getElementById('heroVideo');
+      v.pause(); v.currentTime = 0; v.removeAttribute('src'); v.load();
+    }
+    document.getElementById('videoModal').addEventListener('click', function (e) {
+      if (e.target === this) closeVideoModal();
+    });
+
+    // -- Hero image slider --
+    (function () {
+      var slides = document.querySelectorAll('.hero-slide');
+      if (slides.length < 2) return;
+      var cur = 0;
+      setInterval(function () {
+        slides[cur].classList.remove('active');
+        cur = (cur + 1) % slides.length;
+        slides[cur].classList.add('active');
+      }, 4500);
+    })();
+
+    // -- FAQ accordion --
+    (function () {
+      var items = document.querySelectorAll('.faq-card');
+      items.forEach(function (card) {
+        var toggle = card.querySelector('.faq-toggle');
+        toggle.addEventListener('click', function () {
+          items.forEach(function (other) {
+            if (other !== card) {
+              other.classList.remove('open');
+              other.querySelector('.faq-toggle .faq-icon').textContent = '+';
+              other.querySelector('.faq-toggle').setAttribute('aria-expanded', 'false');
+              other.querySelector('.faq-answer').style.maxHeight = '0px';
+            }
+          });
+          var isOpen = card.classList.toggle('open');
+          toggle.querySelector('.faq-icon').textContent = isOpen ? '-' : '+';
+          toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          var answer = card.querySelector('.faq-answer');
+          answer.style.maxHeight = isOpen ? answer.scrollHeight + 'px' : '0px';
+        });
+        if (card.classList.contains('open')) {
+          var answer = card.querySelector('.faq-answer');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    })();
+  </script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
